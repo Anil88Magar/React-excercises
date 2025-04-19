@@ -1,0 +1,91 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.bank-app {
+  max-width: 400px;
+  margin: 2rem auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.bank-card {
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.bank-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.bank-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bank-details p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.bank-details span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.bank-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: rgb(255, 254, 254);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: rgb(239, 233, 233);
+  grid-column: span 2;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+  grid-column: span 2;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #e9ecef;
+  color: #adb5bd;
+  border-color: #dee2e6;
+}
+
+.btn-primary:disabled {
+  background-color: #ced4da;
+  color: #6c757d;
+}
+
+.btn-danger:disabled {
+  background-color: #f8f9fa;
+  color: #ffc9c9;
+  border-color: #ffc9c9;
+}
